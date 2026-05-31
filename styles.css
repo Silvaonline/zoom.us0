@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #0e72ed;
+}
+
+.zoom-logo{
+    height: 30px;
+}
+
+.bottom-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b1b1b;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.control-button{
+    height: 70px;
+}
+
+.b-center{
+    filter: grayscale(1);
+}
+
+.top-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b1b1b;
+    padding: 10px 50px;
+}
+
+.control-button-t{
+    height: 40px;
+}
+
+.videosection{
+    height: 82vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.video-show{
+    height: 600px;
+    width: 800px;
+    background-color: #1b1b1b;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-pp{
+    height: 150px;
+    filter: grayscale(1);
+}
+
+.update-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(40, 40, 40, 0.7);
+    transition: 2s;
+}
+
+.modal-content{
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1b1b1b;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 51px 0px #141414;
+    width: 850px;
+    max-width: 100%;
+    min-height: 250px;
+    /* text-align: center; */
+    animation: modalFadeIn 0.5s ease-out;
+}
+
+.update-button{
+    background-color: #0e72ed;
+    color: rgb(249, 249, 249);
+    border: 0;
+    /* height: 30px; */
+    width: 160px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.modal-top{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.modal-heading{
+    font-size: 35px;
+    color: rgb(210, 210, 210);
+}
+
+.modal-par{
+    font-size: 20px;
+    color: rgb(210, 210, 210);
+    line-height: 30px;
+    font-weight: 100;
+}
+
+.zoom-video-icon{
+    width: 60px;
+}
+
+.loader {
+  height: 5px;
+  width: 840px;
+  border-radius: 1px;
+  --c:no-repeat linear-gradient(#0e72ed 0 0);
+  background: var(--c),var(--c),#abd1ff;
+  background-size: 60% 100%;
+  animation: l16 3s infinite;
+}
+@keyframes l16 {
+  0%   {background-position:-150% 0,-150% 0}
+  66%  {background-position: 250% 0,-150% 0}
+  100% {background-position: 250% 0, 250% 0}
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
